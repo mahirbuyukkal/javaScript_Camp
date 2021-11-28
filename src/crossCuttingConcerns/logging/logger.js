@@ -1,6 +1,6 @@
 export class BaseLogger{
     log(data){
-        console.log("Default logger: " + data)
+        console.log("Default logger : " + data)
     }
 }
 
@@ -9,7 +9,7 @@ export class ElasticLogger extends BaseLogger{
         console.log("Logged to Elastic" + data)
     }
 }
-// alında ikiside bir base logger
+// aslında ikisi de baselogger
 export class MongoLogger extends BaseLogger{
     log(data){
         console.log("Logged to Mongo" + data)
